@@ -34,7 +34,7 @@ __<ins>Pre-processing & Methodology:</ins>__
 
 __<ins>Results Analysis:</ins>__
 
-  1. An LGBMRegressor was fitted to the dataset, with a 5-fold cross validated mean accuracy of approximately 0.09%. Between separate parameter tryouts, the ones that produced a more conservative model were chosen.
+  1. An LGBMRegressor was fitted to the dataset, with a 5-fold cross validated mean RMSE of approximately 0.09% (0.00093). Between separate parameter tryouts, the ones that produced a more conservative model were chosen.
   2. Predictions were produced using different scenarios for a time period not longer than what is documented.
      - All measures deactivated.
      - All measures activated: Intensity 0.1
