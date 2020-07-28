@@ -1,8 +1,13 @@
-## Covid-19_Measure_Assessment_Dataset
-**Compiling a dataset suitable for modeling the impact of government policies on the spread of covid-19**
+# Covid-19_Measure_Assessment_Dataset
+### Compiling a dataset suitable for modeling the impact of government policies on the spread of covid-19
 
 
-__<ins>Data sources:</ins>__
+**_This is a work in progress and it is expected to be updated, including possible complete approach reconsiderations._** 
+
+**_<ins>Contributions, suggestions and reviews are strongly encouraged</ins>._**
+
+
+#### __<ins>Data sources:</ins>__
 
   * [1. Acaps measure implementation dataset](https://www.acaps.org/covid19-government-measures-dataset)
 
@@ -15,14 +20,15 @@ __<ins>Data sources:</ins>__
   * [5. OECD Built-up area cover data](https://stats.oecd.org/Index.aspx?DataSetCode=BUILT_UP)
 
 
-__<ins>Pre-processing & Methodology:</ins>__
+#### __<ins>Pre-processing & Methodology:</ins>__
 
   1. Each dataset is preprocessed and cleaned with regards to country names, such as to be able to efficiently use the column "Country" as a join base.
   2. CSSE JHU Timeseries are filtered to only include countries with a minimum of 500 confirmed cases. Organized in series per country.
      - The confirmed cases dataset are transformed to logarithmic scale, which is then transformed to daily percent change. The daily percent changes are then used for the compilation of the final dataset. The particular unit of measure was chosen as a representative of disease spread and because of its non relation to the number of confirmed cases, which would render measurements comparable between different countries.
      - The recorded values are corrected for noise, via a centered 7-day moving average.
+     - Example for Afghanistan:
      ![Y Smoothing](https://github.com/JosefDoun/Covid_19_Government_Measures_Assessment_Dataset/blob/master/images/Noise_removal.png?raw=true)
-     ![Y Smoothing](https://github.com/JosefDoun/Covid_19_Government_Measures_Assessment_Dataset/blob/master/images/Noise_removal_2.png?raw=true)
+     
   3. GHCN climate data are used to extract and organize per country average temperature, per day. Organized in series per country.
   4. ACAPS Measures are filtered to exclude implemented measures prior to the appearance of cases (depending on country). Organized in series per country.
      - Each measure is one hot coded throughout 35 columns, with a positive or negative sign depending whether it is an introduction or a fade-out measure.
@@ -32,7 +38,7 @@ __<ins>Pre-processing & Methodology:</ins>__
   6. Individual derived sets are combined together in a unified dataset which can be found under /training_data.
 
 
-__<ins>Results Analysis:</ins>__
+#### __<ins>Results Analysis:</ins>__
 
   1. An LGBMRegressor was fitted to the dataset, with a 5-fold cross validated mean RMSE of approximately 0.09% (0.00093). Between separate parameter tryouts, the ones that produced a more conservative model were chosen.
   2. Predictions were produced using different scenarios for a time period not longer than what is documented.
