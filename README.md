@@ -51,7 +51,7 @@
      ![Results](https://github.com/JosefDoun/Covid_19_Government_Measures_Assessment_Dataset/blob/master/images/Results_1.png?raw=true)
      
 |      Measures                                           | Spread % decrease in 182 days   |  RMSE | Feature importance (splits)  |No. of non-zero values (dataset)|
-|  :---                                                   | :---:                           | :---:                                | :---:                          |
+|  :---                                                   | :---:                           | :---: |              :---:           |   :--: |
 |Economic measures                                                        | -48.0% | +- 2.6%      |                   4280         |                    14783|
 |Strengthening the public health system                                 |   -28.5% | +- 2.6%              |           5103         |                    14236|
 |Partial lockdown                                                         | -28.5% | +- 2.6%                 |        4728             |                11061|
@@ -74,7 +74,7 @@
 |Changes in prison-related policies                                       |  -0.5% | +- 2.6%            |              799            |                  5423|
 |Domestic travel restrictions                                            |   -0.5% | +- 2.6%            |             2891            |                 12185|
 |Border closure                                                          |   -0.4% | +- 2.6%            |             2743              |               14063|
-|Additional health/documents requirements upon arrival                   |   -0.2% | +- 2.6%            |              521             |                 4072|
+|Additional health/documents requirements upon arrival                      |   -0.2% | +- 2.6%            |              521             |                 4072|
 |Surveillance and monitoring                                             |   -0.2% | +- 2.6%            |             2955             |                 9418|
 |Psychological assistance and medical social work                        |   -0.1% | +- 2.6%            |             2085           |                   5013|
 |Military deployment                                                     |   -0.1% | +- 2.6%            |              270             |                 5099|
@@ -86,7 +86,6 @@
 |Humanitarian exemptions                                                 |    0.0% | +- 2.6%             |               0             |                  494|
 |Full lockdown                                                           |    0.1% | +- 2.6%             |             347              |                2624|
 |Limit product imports/exports                                           |    0.2% | +- 2.6%              |            251               |               2813|
-
 
 Author: Iosif Doundoulakis
 
