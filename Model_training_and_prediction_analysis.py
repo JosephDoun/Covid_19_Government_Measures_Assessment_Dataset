@@ -132,6 +132,8 @@ results = pd.DataFrame(((round(((measure[-1] - intensity_0[-1]) / intensity_0[-1
                        columns=['Spread % decrease in {} days'.format(int(days))])
 
 results['RMSE'] = '+- {}%'.format(abs(round((days*scores.mean()/intensity_0[-1])*100, 1)))
+results['Feature importance (splits)'] = Regressor.feature_importances_[5:]
+results['No. of non-zero values (dataset)'] = X[X > 0].count()[5:]
 
 results.sort_values('Spread % decrease in {} days'.format(int(days)), inplace=True)
 results[results.columns[0]] = results[results.columns[0]].apply(lambda x: '{}%'.format(x))
