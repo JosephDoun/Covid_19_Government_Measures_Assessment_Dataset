@@ -7,7 +7,7 @@ from lightgbm import LGBMRegressor
 pd.options.display.max_columns = 50
 pd.options.display.width = 1000
 
-training_data = pd.read_csv('../training_data/covid19_measure_assessment_dataset.csv')
+training_data = pd.read_csv('training_data/covid19_measure_assessment_dataset.csv')
 
 
 X = training_data[training_data.columns[0:-1]]
