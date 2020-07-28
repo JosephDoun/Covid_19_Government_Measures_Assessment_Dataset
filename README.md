@@ -27,7 +27,7 @@ __<ins>Pre-processing & Methodology:</ins>__
   4. ACAPS Measures are filtered to exclude implemented measures prior to the appearance of cases (depending on country). Organized in series per country.
      - Each measure is one hot coded throughout 35 columns, with a positive or negative sign depending whether it is an introduction or a fade-out measure.
      - In order to establish the strength of implementation for each measure in place at a moment in time, the values are cumulatively summed into a continuous timeseries, which is then normalized into a [0,1] interval. Meaning, 1 corresponds to the measure being fully active, while any related fadeout measures are substracted gradually. This point system implies that if any number of fadeout measures were implemented after its final introduction, the measure would end up being inactive. Which does not represent reality in many of the cases. However, this approach manages to quantify withdrawl stages on some degree. The final product would describe what measures are active at a moment in time and at what 'degree' in relation to the maximum (1).
-     - A more ideal approach would be to manually evaluate each measure of the ACAPS dataset based on the Comments field.
+     - A more ideal approach would be to manually evaluate each measure implementation of the ACAPS dataset based on the 'Comments' field.
   5. Population and Built-up area datasets are integrated as they are and as an index (population density).
   6. Individual derived sets are combined together in a unified dataset which can be found under /training_data.
 
@@ -80,3 +80,16 @@ __<ins>Results Analysis:</ins>__
 |Humanitarian exemptions                                                   |  0.0% | +- 2.6%|
 |Full lockdown                                                             |  0.1% | +- 2.6%|
 |Limit product imports/exports                                             |  0.2% | +- 2.6%|
+
+Author: Iosif Doundoulakis
+
+E-mail: doundoulakis.iosif@outlook.com
+
+
+Dependencies:
+
+- Pandas / Numpy / Scipy / Matplotlib / xlrd
+- LightGBM
+- Python version 3.7.1
+
+
