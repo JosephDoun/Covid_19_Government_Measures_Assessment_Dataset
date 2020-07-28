@@ -14,6 +14,9 @@
   * [2. CSSE-JHU Time-series](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series)
 
   * [3. GHCN daily climate data](https://www.climate.gov/maps-data/dataset/daily-temperature-and-precipitation-reports-data-tables)
+    - Menne, M.J., I. Durre, R.S. Vose, B.E. Gleason, and T.G. Houston, 2012:  An overview 
+of the Global Historical Climatology Network-Daily Database.  Journal of Atmospheric 
+and Oceanic Technology, 29, 897-910, doi:10.1175/JTECH-D-11-00103.1.
 
   * [4. World Bank population data](https://data.worldbank.org/indicator/sp.pop.totl)
 
