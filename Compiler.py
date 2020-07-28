@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+
 
 __author__ = 'Josef Doundoulakis'
 __maintainer__ = 'Josef Doundoulakis'
