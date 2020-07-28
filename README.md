@@ -44,42 +44,42 @@ __<ins>Results Analysis:</ins>__
      
      ![Results](https://github.com/JosefDoun/Covid_19_Government_Measures_Assessment_Dataset/blob/master/images/Results_1.png?raw=true)
      
-|           Measures                                     |Spread % decrease in 182 days |  RMSE |
-|--------------------------------------------------------|------------------------------|-------|
-|Economic measures                                       |          -48.0%              |+- 2.6%|
-|Strengthening the public health system                  |-28.5% |+- 2.6%|
-|Partial lockdown                                                          |-28.5%  |+- 2.6%|
-|Schools closure                                                           |-15.7%  |+- 2.6%|
-|International flights suspension                                          | -7.5%  |+- 2.6%|
-|Limit public gatherings                                                   | -7.2% | +- 2.6%|
-|Other public health measures enforced                                      |-6.5%  |+- 2.6%|
-|Isolation and quarantine policies                                          |-5.7% | +- 2.6%|
-|Emergency administrative structures activated o...                         |-5.4%  |+- 2.6%|
-|Closure of businesses and public services                                  |-4.7%  |+- 2.6%|
-|Visa restrictions                                                          |-3.3% | +- 2.6%|
-|Requirement to wear protective gear in public                              |-3.1%  |+- 2.6%|
-|Curfews                                                                   | -2.5% | +- 2.6%|
-|Awareness campaigns                                                        |-2.0%  |+- 2.6%|
-|General recommendations                                                   | -1.9% | +- 2.6%|
-|Health screenings in airports and border crossings                         |-1.3% | +- 2.6%|
-|State of emergency declared                                               | -1.3%  |+- 2.6%|
-|Testing policy                                                            | -0.8% |+- 2.6%|
-|Border checks                                                              |-0.6% | +- 2.6%|
-|Changes in prison-related policies                                         |-0.5% | +- 2.6%|
-|Domestic travel restrictions                                              |-0.5% | +- 2.6%|
-|Border closure                                                           |  -0.4% | +- 2.6%|
-|Additional health/documents requirements upon arrival                        | -0.2% | +- 2.6%|
-|Surveillance and monitoring                                              | -0.2%  |+- 2.6%|
-|Psychological assistance and medical social work                           |-0.1% | +- 2.6%|
-|Military deployment                                                       | -0.1% | +- 2.6%|
-|Amendments to funeral and burial regulations                                |0.0% | +- 2.6%|
-|Mass population testing                                                   |  0.0% | +- 2.6%|
-|Checkpoints within the country                                              |0.0% | +- 2.6%|
-|Lockdown of refugee/idp camps or other minorities                         | -0.0%  |+- 2.6%|
-|Complete border closure                                                    | 0.0% | +- 2.6%|
-|Humanitarian exemptions                                                   |  0.0% | +- 2.6%|
-|Full lockdown                                                             |  0.1% | +- 2.6%|
-|Limit product imports/exports                                             |  0.2% | +- 2.6%|
+>|           Measures                                     |Spread % decrease in 182 days |  RMSE |
+>|--------------------------------------------------------|------------------------------|-------|
+>|Economic measures                                       |          -48.0%              |+- 2.6%|
+>|Strengthening the public health system                  |-28.5% |+- 2.6%|
+>|Partial lockdown                                                          |-28.5%  |+- 2.6%|
+>|Schools closure                                                           |-15.7%  |+- 2.6%|
+>|International flights suspension                                          | -7.5%  |+- 2.6%|
+>|Limit public gatherings                                                   | -7.2% | +- 2.6%|
+>|Other public health measures enforced                                      |-6.5%  |+- 2.6%|
+>|Isolation and quarantine policies                                          |-5.7% | +- 2.6%|
+>|Emergency administrative structures activated o...                         |-5.4%  |+- 2.6%|
+>|Closure of businesses and public services                                  |-4.7%  |+- 2.6%|
+>|Visa restrictions                                                          |-3.3% | +- 2.6%|
+>|Requirement to wear protective gear in public                              |-3.1%  |+- 2.6%|
+>|Curfews                                                                   | -2.5% | +- 2.6%|
+>|Awareness campaigns                                                        |-2.0%  |+- 2.6%|
+>|General recommendations                                                   | -1.9% | +- 2.6%|
+>|Health screenings in airports and border crossings                         |-1.3% | +- 2.6%|
+>|State of emergency declared                                               | -1.3%  |+- 2.6%|
+>|Testing policy                                                            | -0.8% |+- 2.6%|
+>|Border checks                                                              |-0.6% | +- 2.6%|
+>|Changes in prison-related policies                                         |-0.5% | +- 2.6%|
+>|Domestic travel restrictions                                              |-0.5% | +- 2.6%|
+>|Border closure                                                           |  -0.4% | +- 2.6%|
+>|Additional health/documents requirements upon arrival                        | -0.2% | +- 2.6%|
+>|Surveillance and monitoring                                              | -0.2%  |+- 2.6%|
+>|Psychological assistance and medical social work                           |-0.1% | +- 2.6%|
+>|Military deployment                                                       | -0.1% | +- 2.6%|
+>|Amendments to funeral and burial regulations                                |0.0% | +- 2.6%|
+>|Mass population testing                                                   |  0.0% | +- 2.6%|
+>|Checkpoints within the country                                              |0.0% | +- 2.6%|
+>|Lockdown of refugee/idp camps or other minorities                         | -0.0%  |+- 2.6%|
+>|Complete border closure                                                    | 0.0% | +- 2.6%|
+>|Humanitarian exemptions                                                   |  0.0% | +- 2.6%|
+>|Full lockdown                                                             |  0.1% | +- 2.6%|
+>|Limit product imports/exports                                             |  0.2% | +- 2.6%|
 
 Author: Iosif Doundoulakis
 
