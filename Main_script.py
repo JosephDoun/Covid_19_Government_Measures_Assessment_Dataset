@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from Plotter import plotter
 import os
 import csv
 from Dataset import Dataset, sync
@@ -36,11 +35,6 @@ sync(temperatures=temperatures, measures=measures,
 country_parts, dataset = dataset_compiler(measures=measures, temperatures=temperatures,
                                           confirmed=confirmed_cases, deaths=deaths,          # Execute segmentation and
                                           population=population, built_up=built_up)          # data compilation
-
-
-# random_country = tuple(measures.keys())[np.random.randint(0, len(measures.keys()))]
-# plotter(random_country, confirmed_cases=confirmed_cases,                            # Plot random choice
-#         deaths=deaths, segments=segments, measures=measures)
 
 
 with open('training_data/covid19_measure_assessment_dataset.csv', 'w', newline='') as f:

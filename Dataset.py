@@ -64,7 +64,7 @@ class Dataset:
             measures = {country : self.df.loc[country].set_index('date') for country in self.df.index.unique()}
 
             for country in measures.keys():
-                # measures[country] = measures[country].groupby('measures').log_type.sum()
+
                 for measure in unique_measures:
 
                     measures[country][measure] = measures[country].measures.apply(lambda x: int(measure == x))
@@ -120,7 +120,7 @@ class Dataset:
                 for country, df in deaths.items():
                     df.index = pd.to_datetime(df.index, errors='raise')
                     deaths[country].sort_index(inplace=True)
-                    # deaths[country] = deaths[country][deaths[country] > 0]
+                    deaths[country] = deaths[country][deaths[country] > 0]
 
                 return deaths
 
