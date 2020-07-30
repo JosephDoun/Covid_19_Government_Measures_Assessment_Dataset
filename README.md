@@ -27,7 +27,7 @@ and Oceanic Technology, 29, 897-910, doi:10.1175/JTECH-D-11-00103.1.
 
   1. Each dataset is preprocessed and cleaned with regards to country names, such as to be able to efficiently use the column "Country" as a join base.
   2. CSSE JHU Timeseries are filtered to only include countries with a minimum of 500 confirmed cases. Organized in series per country.
-     - The confirmed cases dataset are transformed to logarithmic scale, which is then transformed to daily percent change. The daily percent changes are then used for the compilation of the final dataset. The particular unit of measure was chosen as a representative of disease spread and because of its non relation to the number of confirmed cases, which would render measurements comparable between different countries.
+     - The confirmed cases dataset are transformed to logarithmic scale, which is then transformed to daily percent change. The daily percent changes are then used for the compilation of the final dataset. The particular unit of measure was chosen due to its representation of disease spread and due to its relativity to the number of confirmed cases, which renders measurements comparable between separate countries.
      - The recorded values are corrected for noise, via a centered 7-day moving average.
      - Example for Afghanistan:
      ![Y Smoothing](https://github.com/JosefDoun/Covid_19_Government_Measures_Assessment_Dataset/blob/master/images/Noise_removal.png?raw=true)
