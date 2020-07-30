@@ -1,4 +1,4 @@
-# Covid-19_Measure_Assessment_Dataset
+# Covid-19 Government Measures Assessment Dataset
 ### Compiling a dataset suitable for modeling the impact of government policies on the spread of covid-19
 
 
