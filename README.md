@@ -34,27 +34,27 @@ and Oceanic Technology, 29, 897-910, doi:10.1175/JTECH-D-11-00103.1.
      
   3. GHCN climate data are used to extract and organize per country average temperature, per day. Organized in series per country.
   4. ACAPS Measures are filtered to exclude implemented measures prior to the appearance of cases (depending on country). Organized in series per country.
-     - Each measure is one hot coded throughout 35 columns, with a positive or negative sign depending whether it is an introduction or a fade-out measure.
-     - In order to establish the strength of implementation for each measure in place at a moment in time, the values are cumulatively summed into a continuous timeseries, which is then normalized into a [0,1] interval. Meaning, 1 corresponds to the measure being fully active, while any related fadeout measures are substracted gradually. This point system implies that if any number of fadeout measures were implemented after its final introduction, the measure would end up being inactive. Which does not represent reality in many of the cases. However, this approach manages to quantify withdrawl stages on some degree. The final product would describe what measures are active at a moment in time and at what 'degree' in relation to the maximum (1).
-     - A more ideal approach would be to manually evaluate each measure implementation of the ACAPS dataset based on the 'Comments' field.
-  5. Population and Built-up area datasets are integrated as they are and as an index (population density).
+     - Each measure is one hot encoded throughout 35 columns, with a positive or negative sign depending whether it is an introduction or a fade-out measure.
+     - In order to establish the strength of implementation for each measure in place at a moment in time, the values are cumulatively summed into a continuous timeseries, which is then normalized into a [0,1] interval. Meaning, a value of 1.0 corresponds to the measure being fully active (_local maximum_), while any related fadeout measures are substracted gradually. This point system implies that if any number of fadeout measures were implemented after its introduction or final extension, regardless severity, the measure would end up being inactive. This does not represent reality in many of the cases. However, this approach helps quantify implementation and withdrawl stages on some degree. The final product describes which measures are active at a moment in time and at what 'degree' in relation to the local maximum (1.0).
+     - A more ideal approach would be to manually evaluate each measure implementation event in the ACAPS dataset based on the 'Comments' field, perhaps using a point system with a globally applicable point of reference.
+  5. Population and Built-up area datasets are integrated as is, and as an indicator (population density).
   6. Individual derived sets are combined together in a unified dataset which can be found under /training_data.
 
 
 #### __<ins>Results Analysis:</ins>__
 
-  1. An LGBMRegressor was fitted to the dataset, with a 5-fold cross validated mean RMSE of approximately 0.09% (0.00093). Between separate parameter tryouts, the ones that produced a more conservative model were chosen.
-  2. Predictions were produced using different scenarios for a time period not longer than what is documented.
+  1. An LGBMRegressor was fitted to the dataset, achieving a 5-fold cross validated mean RMSE of approximately 0.09% (0.00093). Between separate parameter tryouts, the ones that produced a more conservative model were chosen.
+  2. Predictions were produced using different scenarios for a time period not longer than what is documented:
      - All measures deactivated.
      - All measures activated: Intensity 0.1
      - All measures activated: Intensity 1.0
      - One prediction for each measure being solely activated.
-     - The rest of the variables with the exception of 'day_zero' were kept constant at mean values.
+     - The remaining variables with the exception of 'day_zero' were kept constant at mean values, at each scenario.
      
      ![Results](https://github.com/JosefDoun/Covid_19_Government_Measures_Assessment_Dataset/blob/master/images/Results_1.png?raw=true)
      
 |      Measures                                           | Spread % decrease in 182 days   |  RMSE | Feature importance (splits)  |No. of non-zero values (dataset)|
-|  :---                                                   | :---:                           | :---: |              :---:           |   :--: |
+|  :---                                                   |              :---:              | :---: |              :---:           |   :--: |
 |Economic measures                                                        | -48.0% | +- 2.6%      |                   4280         |                    14783|
 |Strengthening the public health system                                 |   -28.5% | +- 2.6%              |           5103         |                    14236|
 |Partial lockdown                                                         | -28.5% | +- 2.6%                 |        4728             |                11061|
@@ -63,7 +63,7 @@ and Oceanic Technology, 29, 897-910, doi:10.1175/JTECH-D-11-00103.1.
 |Limit public gatherings                                                  |  -7.2% | +- 2.6%               |          4610             |                15681|
 |Other public health measures enforced                                    |  -6.5%  |+- 2.6%              |           2678              |                9195|
 |Isolation and quarantine policies                                        |  -5.7% | +- 2.6%              |           2488              |               15128|
-|Emergency administrative structures activated or established                       |  -5.4% | +- 2.6%              |           3088             |                11469|
+|Emergency administrative structures activated or established             |  -5.4% | +- 2.6%              |           3088             |                11469|
 |Closure of businesses and public services                                |  -4.7% | +- 2.6%              |           3992            |                 13085|
 |Visa restrictions                                                        |  -3.3% | +- 2.6%              |           2257            |                 11587|
 |Requirement to wear protective gear in public                           |   -3.1% | +- 2.6%              |           2929            |                  9058|
@@ -89,6 +89,10 @@ and Oceanic Technology, 29, 897-910, doi:10.1175/JTECH-D-11-00103.1.
 |Humanitarian exemptions                                                 |    0.0% | +- 2.6%             |               0             |                  494|
 |Full lockdown                                                           |    0.1% | +- 2.6%             |             347              |                2624|
 |Limit product imports/exports                                           |    0.2% | +- 2.6%              |            251               |               2813|
+
+
+
+
 
 Author: Iosif Doundoulakis
 
