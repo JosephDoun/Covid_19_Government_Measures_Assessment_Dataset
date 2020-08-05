@@ -37,7 +37,7 @@ and Oceanic Technology, 29, 897-910, doi:10.1175/JTECH-D-11-00103.1.
      - Each measure is one hot encoded throughout 35 columns, with a positive or negative sign depending whether it is an introduction or a fade-out measure.
      - In order to establish the strength of implementation for each measure in place at a moment in time, the values are cumulatively summed into a continuous timeseries, which is then normalized into a [0,1] interval. Meaning, a value of 1.0 corresponds to the measure being fully active (_local maximum_), while any related fadeout measures are substracted gradually. This point system implies that if any number of fadeout measures were implemented after its introduction or final extension, regardless severity, the measure would end up being inactive. This does not represent reality in many of the cases. However, this approach helps quantify implementation and withdrawl stages on some degree. The final product describes which measures are active at a moment in time and at what 'degree' in relation to the local maximum (1.0).
      - A more ideal approach would be to manually evaluate each measure implementation event in the ACAPS dataset based on the 'Comments' field, perhaps using a point system with a globally applicable point of reference.
-  5. Population and Built-up area datasets are integrated as is, and as an indicator (population density).
+  5. Population and Built-up area datasets are integrated as is, and as an index (population density).
   6. Individual derived sets are combined together in a unified dataset which can be found under /training_data.
 
 
