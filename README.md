@@ -91,8 +91,7 @@ and Oceanic Technology, 29, 897-910, doi:10.1175/JTECH-D-11-00103.1.
 |Limit product imports/exports                                           |    0.2% | +- 2.6%              |            251               |               2813|
 
 
-Key findings show economic measures having the largest impact in covid-19 spread for the period under examination. It is most likely correlated to the fact that more prosperous countries (with the capability of applying larger and more frequent economic measures) appeared to be doing much better early on in the pandemic. Putting this aside, public healthcare investments appear to be most promising in combination with strategic partial lockdowns. With regards to partial lockdowns, however, there aren't enough data for the period under examination to make any solid comparisons to full lockdowns, so they should not be differentiated.
-
+Key findings show economic measures having the largest impact in covid-19 spread for the period under examination. It is most likely correlated to the fact that more prosperous countries (with the capability of applying larger and more frequent economic measures) appeared to be doing much better early on in the pandemic. Putting this aside, public health system investments appear to stand out in combination with strategic partial lockdowns. With regards to partial lockdowns, however, there aren't enough data for the period under examination to make any solid comparisons to full lockdowns, so they should not be differentiated.
 
 Author: Iosif Doundoulakis
 
